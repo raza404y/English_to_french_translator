@@ -10,4 +10,5 @@
     <string name="translated">Translated</string>
     <string name="translate2">Translate</string>
     <string name="voice_translator">Voice Translator</string>
+    <string name="translated_text_here">Translated Text here..</string>
 </resources>

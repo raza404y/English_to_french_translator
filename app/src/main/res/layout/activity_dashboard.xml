@@ -127,6 +127,7 @@
 
 
                 <ImageView
+                    android:id="@+id/texttranslatorbtn"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_90sdp"
                     android:layout_margin="@dimen/_10sdp"
@@ -147,6 +148,7 @@
 
 
                 <ImageView
+                    android:id="@+id/speechtotext"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_90sdp"
                     android:layout_marginStart="@dimen/_10sdp"

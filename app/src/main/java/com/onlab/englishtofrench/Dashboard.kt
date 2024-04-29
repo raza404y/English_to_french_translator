@@ -17,5 +17,15 @@ class Dashboard : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.texttranslatorbtn.setOnClickListener {
+            val intent = Intent(this,TextTranslator::class.java)
+            startActivity(intent)
+        }
+
+        binding.speechtotext.setOnClickListener {
+            val intent = Intent(this,SpeechtoText::class.java)
+            startActivity(intent)
+        }
+
     }
 }

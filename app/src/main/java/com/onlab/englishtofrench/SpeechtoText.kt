@@ -2,15 +2,14 @@ package com.onlab.englishtofrench
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.onlab.englishtofrench.databinding.ActivityTextTranslatorBinding
+import com.onlab.englishtofrench.databinding.ActivitySpeechtoTextBinding
 
-class TextTranslator : AppCompatActivity() {
-    private lateinit var binding: ActivityTextTranslatorBinding
+class SpeechtoText : AppCompatActivity() {
+    private lateinit var binding: ActivitySpeechtoTextBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityTextTranslatorBinding.inflate(layoutInflater)
+        binding = ActivitySpeechtoTextBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         binding.backbtn.setOnClickListener {
             onBackPressed()

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.EnglishToFrench"
         tools:targetApi="31">
         <activity
+            android:name=".TexttoSpeech"
+            android:exported="false" />
+        <activity
+            android:name=".SpeechtoText"
+            android:exported="false" />
+        <activity
             android:name=".TextTranslator"
             android:exported="false" />
         <activity

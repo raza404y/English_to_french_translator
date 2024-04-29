@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:scrollbars="none"
-    tools:context=".TextTranslator">
+    tools:context=".TexttoSpeech">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                 android:background="@android:color/transparent"
                 android:paddingStart="@dimen/_14sdp"
                 android:paddingEnd="@dimen/_14sdp"
-                android:text="Text Translator"
+                android:text="Text to Speech"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_21ssp"
                 android:textStyle="bold"
@@ -139,10 +139,9 @@
                 android:layout_marginTop="@dimen/_12sdp"
                 android:layout_marginEnd="@dimen/_12sdp"
                 android:hint="Write your text here..."
-                android:inputType="text"
                 android:gravity="start"
-                android:textSize="@dimen/_14ssp"
                 android:padding="@dimen/_8sdp"
+                android:inputType="textMultiLine"
                 android:background="@drawable/press_mice"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -162,20 +161,41 @@
                 android:textStyle="bold" />
 
 
-            <TextView
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_100sdp"
                 android:layout_marginStart="@dimen/_12sdp"
                 android:layout_marginTop="@dimen/_6sdp"
                 android:layout_marginEnd="@dimen/_12sdp"
-                android:padding="@dimen/_8sdp"
-                android:textSize="@dimen/_14ssp"
-                android:text="@string/translated_text_here"
-                android:textColor="#6A959292"
                 android:background="@drawable/press_mice"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                <ImageView
+                    android:id="@+id/imageView52"
+                    android:layout_width="@dimen/_42sdp"
+                    android:layout_height="@dimen/_42sdp"
+                    android:layout_marginTop="@dimen/_18sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/audio_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/audio_translated"
+                    android:textSize="@dimen/_14ssp"
+                    android:textColor="@color/purple"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
@@ -188,9 +208,9 @@
             android:background="@color/purple_lite"
             android:gravity="center_horizontal"
             android:orientation="horizontal"
-            android:paddingEnd="@dimen/_12sdp"
-            android:paddingTop="@dimen/_3sdp"
             android:paddingBottom="@dimen/_3sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_12sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
