@@ -27,5 +27,10 @@ class Dashboard : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.texttospeech.setOnClickListener {
+            val intent = Intent(this,TexttoSpeech::class.java)
+            startActivity(intent)
+        }
+
     }
 }

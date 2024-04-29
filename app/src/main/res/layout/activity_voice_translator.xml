@@ -160,7 +160,8 @@
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:gravity="center_horizontal"
                 android:text="@string/press_the_mice_icon_and_speak"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/purple"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -208,7 +209,8 @@
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:gravity="center_horizontal"
                 android:text="@string/audio_translated"
-                android:textSize="@dimen/_14ssp"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/purple"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
