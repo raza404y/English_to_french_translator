@@ -226,6 +226,8 @@
         android:background="@color/purple_lite"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
+        android:paddingBottom="@dimen/_3sdp"
+        android:paddingTop="@dimen/_3sdp"
         android:paddingEnd="@dimen/_12sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
