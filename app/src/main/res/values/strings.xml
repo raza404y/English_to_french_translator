@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">English to French</string>
+    <string name="translate">TRANSLATE</string>
+    <string name="english_to_french">English to French</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="press_the_mice_icon_and_speak">Press the mice icon and speak</string>
+    <string name="audio_translated">Audio Translated</string>
+    <string name="translated">Translated</string>
+    <string name="translate2">Translate</string>
+</resources>
