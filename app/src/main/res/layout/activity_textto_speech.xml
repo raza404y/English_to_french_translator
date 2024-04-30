@@ -72,11 +72,11 @@
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="wrap_content"
-            android:layout_marginTop="@dimen/_12sdp"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginEnd="@dimen/_12sdp"
+            android:gravity="center_horizontal"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -107,8 +107,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/_48sdp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginEnd="@dimen/_16sdp"
                 android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
                 android:backgroundTint="@color/purple_lite"
                 android:text="@string/french"
                 android:textColor="@color/black"
@@ -124,29 +124,29 @@
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginStart="@dimen/_12sdp"
             android:layout_marginEnd="@dimen/_12sdp"
+            android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
 
             <EditText
+                android:id="@+id/textedt"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_100sdp"
                 android:layout_marginStart="@dimen/_12sdp"
                 android:layout_marginTop="@dimen/_12sdp"
                 android:layout_marginEnd="@dimen/_12sdp"
-                android:hint="Write your text here..."
-                android:gravity="start"
-                android:padding="@dimen/_8sdp"
-                android:inputType="textMultiLine"
                 android:background="@drawable/press_mice"
+                android:gravity="start"
+                android:hint="@string/write_your_text_here"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_8sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
-
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 
             <TextView
@@ -162,6 +162,7 @@
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/playbtn"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_100sdp"
                 android:layout_marginStart="@dimen/_12sdp"
@@ -189,8 +190,8 @@
                     android:layout_marginBottom="@dimen/_10sdp"
                     android:gravity="center_horizontal"
                     android:text="@string/audio_translated"
-                    android:textSize="@dimen/_14ssp"
                     android:textColor="@color/purple"
+                    android:textSize="@dimen/_14ssp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -200,61 +201,32 @@
         </LinearLayout>
 
 
-        <LinearLayout
-            android:id="@+id/linearLayout4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:background="@color/purple_lite"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal"
-            android:paddingBottom="@dimen/_3sdp"
-            android:paddingTop="@dimen/_3sdp"
-            android:paddingEnd="@dimen/_12sdp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
-
-
-            <ImageView
-                android:layout_width="@dimen/_28sdp"
-                android:layout_height="@dimen/_28sdp"
-                android:layout_marginStart="@dimen/_12sdp"
-                android:background="@android:color/transparent"
-                android:src="@drawable/copy_icon" />
-
-            <ImageView
-                android:layout_width="@dimen/_28sdp"
-                android:layout_height="@dimen/_28sdp"
-                android:layout_marginStart="@dimen/_12sdp"
-                android:background="@android:color/transparent"
-                android:src="@drawable/del_icon" />
-
-            <ImageView
-                android:layout_width="@dimen/_28sdp"
-                android:layout_height="@dimen/_28sdp"
-                android:layout_marginStart="@dimen/_12sdp"
-                android:background="@android:color/transparent"
-                android:src="@drawable/share_icon" />
-
-        </LinearLayout>
-
-
         <com.google.android.material.button.MaterialButton
-            android:layout_width="0dp"
+            android:id="@+id/materialButton2"
+            android:layout_width="wrap_content"
             android:layout_height="@dimen/_55sdp"
             android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_30sdp"
             android:backgroundTint="@color/purple_lite"
             android:text="@string/translate2"
             android:textColor="@color/black"
             android:textSize="@dimen/_16ssp"
             android:textStyle="bold"
+            app:rippleColor="@color/purple"
             app:cornerRadius="@dimen/_8sdp"
-            android:layout_marginTop="@dimen/_18sdp"
-            app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
-            app:layout_constraintStart_toStartOf="@+id/linearLayout4"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
+        <TextView
+            android:id="@+id/translatedtextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

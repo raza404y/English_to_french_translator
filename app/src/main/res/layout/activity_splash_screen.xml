@@ -45,6 +45,7 @@
         android:layout_marginBottom="@dimen/_98sdp"
         app:cornerRadius="@dimen/_12sdp"
         android:text="@string/let_s_start"
+        app:rippleColor="@color/purple"
         android:textSize="@dimen/_16ssp"
         android:textColor="@color/purple"
         android:textStyle="bold"

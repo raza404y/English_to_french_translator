@@ -11,4 +11,8 @@
     <string name="translate2">Translate</string>
     <string name="voice_translator">Voice Translator</string>
     <string name="translated_text_here">Translated Text here..</string>
+    <string name="play_translated_audio">Play translated audio</string>
+    <string name="play_audio">Play Audio</string>
+    <string name="please_wait_a_minute">please wait a minute</string>
+    <string name="write_your_text_here">Write your text here...</string>
 </resources>

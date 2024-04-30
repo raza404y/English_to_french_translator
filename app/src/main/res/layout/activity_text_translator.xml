@@ -133,6 +133,7 @@
 
 
             <EditText
+                android:id="@+id/textedt"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_100sdp"
                 android:layout_marginStart="@dimen/_12sdp"
@@ -163,6 +164,7 @@
 
 
             <TextView
+                android:id="@+id/translatedTextView"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_100sdp"
                 android:layout_marginStart="@dimen/_12sdp"
@@ -170,8 +172,8 @@
                 android:layout_marginEnd="@dimen/_12sdp"
                 android:padding="@dimen/_8sdp"
                 android:textSize="@dimen/_14ssp"
-                android:text="@string/translated_text_here"
-                android:textColor="#6A959292"
+                android:hint="@string/translated_text_here"
+                android:textColor="@color/black"
                 android:background="@drawable/press_mice"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -197,6 +199,7 @@
 
 
             <ImageView
+                android:id="@+id/copybtn"
                 android:layout_width="@dimen/_28sdp"
                 android:layout_height="@dimen/_28sdp"
                 android:layout_marginStart="@dimen/_12sdp"
@@ -204,6 +207,7 @@
                 android:src="@drawable/copy_icon" />
 
             <ImageView
+                android:id="@+id/clearbtn"
                 android:layout_width="@dimen/_28sdp"
                 android:layout_height="@dimen/_28sdp"
                 android:layout_marginStart="@dimen/_12sdp"
@@ -211,6 +215,7 @@
                 android:src="@drawable/del_icon" />
 
             <ImageView
+                android:id="@+id/sharebtn"
                 android:layout_width="@dimen/_28sdp"
                 android:layout_height="@dimen/_28sdp"
                 android:layout_marginStart="@dimen/_12sdp"
@@ -221,6 +226,7 @@
 
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/translatebtn"
             android:layout_width="0dp"
             android:layout_height="@dimen/_55sdp"
             android:layout_gravity="center_vertical"
@@ -229,6 +235,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/_16ssp"
             android:textStyle="bold"
+            app:rippleColor="@color/purple"
             app:cornerRadius="@dimen/_8sdp"
             android:layout_marginTop="@dimen/_18sdp"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
